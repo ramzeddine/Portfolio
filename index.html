@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!-- Metadata & SEO -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Portfolio de Ramzeddine Bousnane | Développeur Full Stack & UI/UX Designer
+    </title>
+    <meta
+      name="description"
+      content="Portfolio professionnel de Ramzeddine Bousnane, développeur Full Stack et designer UI/UX basé à Alger. Découvrez mes projets, compétences et me contactez via Gmail, téléphone, Facebook, Instagram, GitHub, Telegram."
+    />
+    <meta
+      name="keywords"
+      content="Ramzeddine Bousnane, portfolio, développeur, full stack, UI UX, web, contact, Gmail, téléphone, Facebook, Instagram, GitHub, Telegram"
+    />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Cinzel+Decorative&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+    <!-- Additional Meta Tags for Social Media -->
+    <meta property="og:title" content="Portfolio de Ramzeddine Bousnane" />
+    <meta
+      property="og:description"
+      content="Développeur Full Stack & UI/UX Designer basé à Alger"
+    />
+    <meta
+      property="og:image"
+      content="https://your-website.com/your-image.jpg"
+    />
+    <meta property="og:url" content="https://your-website.com" />
+  </head>
+
+  <body class="light" data-theme="light">
+    <!-- Theme Toggle -->
+    <button
+      id="theme-toggle"
+      class="theme-toggle"
+      aria-label="Changer le thème"
+      aria-pressed="false"
+    >
+      <i class="fas fa-moon" aria-hidden="true"></i>
+    </button>
+
+    <!-- Header -->
+    <header class="site-header" role="banner">
+      <nav class="nav-container" aria-label="Navigation principale">
+        <a href="#home" class="logo">Ramzeddine Bousnane</a>
+        <button
+          class="nav-toggle"
+          aria-label="Ouvrir la navigation"
+          aria-expanded="false"
+        >
+          <span class="hamburger"></span>
+        </button>
+        <ul class="site-nav" role="navigation">
+          <li><a href="#home">Accueil</a></li>
+          <li><a href="#about">À Propos</a></li>
+          <li><a href="#skills">Compétences</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+      <!-- Hero Section -->
+      <section id="home" class="hero" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <h1 id="hero-title">
+            Bonjour, je suis <span>Ramzeddine Bousnane</span>
+          </h1>
+          <p class="subtitle">Développeur Full Stack &amp; Informaticien</p>
+          <div class="hero-actions">
+            <a href="project1.html" class="btn primary">Voir mes project</a>
+            <a href="project2.html" class="btn secondary">Voir Todo App</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="section" aria-labelledby="about-title">
+        <div class="container">
+          <h2 id="about-title">À Propos de Moi</h2>
+          <div class="about-flex">
+            <picture>
+              <source
+                media="(max-width:600px)"
+                srcset="
+                  https://source.unsplash.com/random/200x200?developer&small
+                "
+              />
+              <img
+                src="photo/campus france.jpg"
+                alt="Portrait de Ramzeddine Bousnane"
+                class="about-img"
+                loading="lazy"
+              />
+            </picture>
+            <div class="about-text">
+              <p>
+                Étudiant en Licence 2 Informatique à l’université de
+                Constantine. Passionné par le développement web, je conçois des
+                interfaces intuitives et performantes, alliant design et
+                efficacité.
+              </p>
+              <ul class="features-list" aria-label="Liste des compétences">
+                <li>📈 Optimisation des performances</li>
+                <li>🔒 Sécurité et bonnes pratiques</li>
+                <li>🖼️ Design réfléchi & responsive</li>
+                <li>⚙️ Intégration continue & déploiement</li>
+              </ul>
+              <a
+                href="photo/cv Ramz Eddine Bousnane.pdf"
+                class="btn tertiary"
+                download
+                >Télécharger mon CV</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="section" aria-labelledby="skills-title">
+        <div class="container">
+          <h2 id="skills-title">Mes Compétences</h2>
+          <div class="skills-grid">
+            <div class="skill-card fade-in">
+              <i class="fas fa-code" aria-hidden="true"></i>
+              <h3>Frontend</h3>
+              <p>React, Vue, HTML5, CSS3, JavaScript ES6+</p>
+            </div>
+            <div class="skill-card fade-in">
+              <i class="fas fa-server" aria-hidden="true"></i>
+              <h3>Backend</h3>
+              <p>Node.js, Express, PHP, MySQL, REST API</p>
+            </div>
+            <div class="skill-card fade-in">
+              <i class="fas fa-paint-brush" aria-hidden="true"></i>
+              <h3>UI/UX</h3>
+              <p>Figma, Adobe XD, Prototypage, User Research</p>
+            </div>
+            <div class="skill-card fade-in">
+              <i class="fas fa-cogs" aria-hidden="true"></i>
+              <h3>DevOps</h3>
+              <p>Docker, CI/CD, GitHub Actions, AWS</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="section" aria-labelledby="projects-title">
+        <div class="container">
+          <h2 id="projects-title">Projets</h2>
+          <div class="projects-grid">
+            <article class="project-card fade-in">
+              <picture>
+                <source
+                  media="(max-width:600px)"
+                  srcset="
+                    https://source.unsplash.com/random/300x200?portfolio&small
+                  "
+                />
+                <img
+                  src="/photo/frontend.webp"
+                  alt="Capture Portfolio"
+                  loading="lazy"
+                />
+              </picture>
+              <div class="project-info">
+                <h3>Portfolio Site</h3>
+                <p>
+                  Mon site personnel avec animations fluides, mode sombre et
+                  performance optimisée.
+                </p>
+                <a href="project1.html" class="btn secondary">Voir détails</a>
+              </div>
+            </article>
+            <article class="project-card fade-in">
+              <picture>
+                <img src="photo/R.png" alt="Capture Todo App" loading="lazy" />
+              </picture>
+              <div class="project-info">
+                <h3>Todo App</h3>
+                <p>
+                  Application web de gestion de tâches en temps réel avec
+                  notifications.
+                </p>
+                <a href="project2.html" class="btn secondary">Voir détails</a>
+              </div>
+            </article>
+            <article class="project-card fade-in">
+              <picture>
+                <img
+                  src="photo/794c55fc5b389db23135835f04aaaf29.webp"
+                  alt="Capture Dashboard"
+                  loading="lazy"
+                />
+              </picture>
+              <div class="project-info">
+                <h3>Dashboard</h3>
+                <p>
+                  Tableaux de bord interactifs pour visualisation de données en
+                  temps réel.
+                </p>
+                <a href="project3.html" class="btn secondary">Voir détails</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section" aria-labelledby="contact-title">
+        <div class="container">
+          <h2 id="contact-title">Contactez-moi</h2>
+          <p class="intro">Choisissez votre mode de contact préféré :</p>
+          <div class="contact-grid">
+            <a
+              class="contact-card icon-only"
+              href="mailto:ramzeddine.bousnane@univ-skikda.dz"
+              title="Gmail"
+            >
+              <i class="fas fa-envelope" aria-hidden="true"></i>
+            </a>
+            <a
+              class="contact-card icon-only"
+              href="tel:+213791632528"
+              title="Téléphone"
+            >
+              <i class="fas fa-phone" aria-hidden="true"></i>
+            </a>
+            <a
+              class="contact-card icon-only"
+              href="https://facebook.com/ramzeddine.bousnane.2765"
+              title="Facebook"
+            >
+              <i class="fab fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a
+              class="contact-card icon-only"
+              href="https://instagram.com/ramzeddine.bsn"
+              title="Instagram"
+            >
+              <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a
+              class="contact-card icon-only"
+              href="https://likedin.com/ramzeddine-bousnane"
+              title="LinkedIn"
+            >
+              <i class="fab fa-likedin" aria-hidden="true"></i>
+            </a>
+            <a
+              class="contact-card icon-only"
+              href="https://github.com/ramzeddine"
+              title="GitHub"
+            >
+              <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+            <a
+              class="contact-card icon-only"
+              href="https://t.me/ramzeddine2765"
+              title="Telegram"
+            >
+              <i class="fab fa-telegram" aria-hidden="true"></i>
+            </a>
+          </div>
+          <form
+            action="https://formspree.io/f/xkgrjekn"
+            method="POST"
+            class="contact-form"
+            novalidate
+          >
+            <label
+              ><span class="sr-only">Votre nom</span>
+              <input type="text" name="name" placeholder="Votre nom" required />
+            </label>
+            <label
+              ><span class="sr-only">Votre email</span>
+              <input
+                type="email"
+                name="email"
+                placeholder="Votre email"
+                required
+              />
+            </label>
+            <label
+              ><span class="sr-only">Votre message</span>
+              <textarea
+                name="message"
+                placeholder="Votre message"
+                rows="4"
+                required
+              ></textarea>
+            </label>
+            <button type="submit" class="btn primary">Envoyer</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+      <div class="container footer-content">
+        <div class="contact-info">
+          <div><i class="fas fa-map-marker-alt"></i> Skikda, Algérie</div>
+          <div>
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:ramzeddine@mail.com"
+              >ramzeddine.bousnane@univ-skikda.dz</a
+            >
+          </div>
+          <div>
+            <i class="fas fa-phone"></i>
+            <a href="tel:+213600123456">+213 791 63 25 28</a>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="https://web.facebook.com/ramzeddine.bousnane.2765"
+            ><i class="fab fa-facebook"></i
+            ><span class="sr-only">Facebook</span></a
+          >
+          <a href="https://instagram.com/ramzeddine.bsn"
+            ><i class="fab fa-instagram"></i
+            ><span class="sr-only">Instagram</span></a
+          >
+          <a href="www.linkedin.com/in/ramzeddine-bousnane"
+            ><i class="fab fa-likedin"></i
+            ><span class="sr-only">LikedIn</span></a
+          >
+          <a href="https://github.com/ramzeddine"
+            ><i class="fab fa-github"></i><span class="sr-only">GitHub</span></a
+          >
+          <a href="https://t.me/ramzeddine2765"
+            ><i class="fab fa-telegram"></i
+            ><span class="sr-only">Télégram</span></a
+          >
+        </div>
+        <p>
+          &copy; <time datetime="2025">2025 </time> Ramzeddine Bousnane. Tous
+          droits réservés.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
